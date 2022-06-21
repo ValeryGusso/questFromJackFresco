@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Сколько?</title>
+  </head>
+  <body>
+    <div class="arrow hide"></div>
+    <div class="app">
+      <h1 id="clown" class="hide">Ну ты бы нажал хоть что-нибудь, клоун</h1>
+      <div class="head-container">
+        <h1
+          id="result-header"
+          class="hide upper-text"
+          style="margin: 0 0 100px 0"
+        >
+          "Нет" - пидора ответ. Получается, что ты
+          <span id="result"></span> раз<span class="hide" id="a">a</span> пидор. Мои поздравления
+        </h1>
+      </div>
+      <div id="hide" class="container">
+        <div class="app__header">
+          <h1 id="time-header">
+            Загадка от Жака Фреско, на размышление даётся
+            <span id="time-header2">10</span> секунд
+          </h1>
+          <h1 id="ti-pidor" class="hide">
+            Ты пидор? <br />
+            осталось <span id="time-game"></span> секунд
+          </h1>
+
+          <h1 id="clown" class="hide">Ну ты бы нажал хоть что-нибудь, клоун</h1>
+        </div>
+        <div class="app__content">
+          <button class="btn" id="start">Начать</button>
+
+          <div class="game" id="game"></div>
+        </div>
+        <div class="app__footer">
+          <div class="input">
+            <label for="game-time">Сколько секунд даётся на размышление?</label>
+            <input type="number" id="game-time" min="10" step="1" value="10" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
